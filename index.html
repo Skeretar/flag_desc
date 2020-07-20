@@ -19,17 +19,28 @@
         .main_title {
             background-color: #191919;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 2em;
             padding: 10px;
             margin: 0;
             font-weight: 650;
         }
         
-        ul.links li a {
+        .links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #151515;
+        }
+        
+        ul.links li {
             float: left;
-            padding: 2.5px 0;
-            width: 33.3%;
+        }
+        
+        ul.links li a {
+            display: block;
             text-align: center;
+            padding: 5px 15px;
         }
         
         a:link {
@@ -66,12 +77,6 @@
             color: tomato;
         }
         /* end links */ 
-
-        .links {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
         
         .main {
             padding: 20px 0px;
@@ -79,23 +84,63 @@
         
         .title {
             text-align: center;
-            background-color: #414141;
+            background-color: #3e3e3e;
+            padding: 2.5px;
+            margin: 0;
+            font-size: 1.5em
+        }
+        
+        
+        .text {
+            padding: 0px 10px;
+            font-size: 1.2em
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        .image_container {
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+            border-top: 3px solid rgba(0,0,0,0.25);
+            border-bottom: 3px solid rgba(0,0,0,0.25);
+            background-color: #272727;
+        }
+        
+        img {
+            height: auto;
+            width: 99%;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .main p {
+            padding: 0 10px;
+            text-align: center;
+            font-size: 1.35em
         }
     </style>
 </head>
 <body>
-    <div class="main_title">ABOUT PERU'S FLAG</div>
+    <div class="main_title">PERU</div>
     
         
-    <div class="link_container"><ul class="links">
+    <ul class="links">
         <li><a href="index.html">FLAG</a></li>
         <li><a href="desc.html">DESCRIPTION</a></li>
         <li><a href="history.html">HISTORY</a></li>
-    </ul></div>
+    </ul>
     
     <div class="main">
         <h1 class="title">THE FLAG</h1>
-        <img src="PLACEHOLDER" alt="Placeholder Image">
+        <div class="image_container">
+            <a href="total.png" title="Click to get flag"><img src="total.png" alt="If u see this then oof"></a>
+        </div>
+        
+        <p>On the left: Peace-time flag | On the right: War-time flag</p>
     </div>
         
 </body>

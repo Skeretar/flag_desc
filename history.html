@@ -19,17 +19,28 @@
         .main_title {
             background-color: #191919;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 2em;
             padding: 10px;
             margin: 0;
             font-weight: 650;
         }
         
-        ul.links li a {
+        .links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #151515;
+        }
+        
+        ul.links li {
             float: left;
-            padding: 2.5px 0;
-            width: 33.3%;
+        }
+        
+        ul.links li a {
+            display: block;
             text-align: center;
+            padding: 5px 15px;
         }
         
         a:link {
@@ -66,12 +77,6 @@
             color: tomato;
         }
         /* end links */ 
-
-        .links {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
         
         .main {
             padding: 20px 0px;
@@ -79,12 +84,56 @@
         
         .title {
             text-align: center;
-            background-color: #414141;
+            background-color: #3e3e3e;
+            padding: 2.5px;
+            margin: 0;
+            font-size: 1.5em
+        }
+        
+        
+        .text {
+            padding: 5px;
+            font-size: 1.2em;
+            border-left: 1px solid #696969;
+            margin: 5px
+        }
+        
+        p {
+            margin: 5px 0px;
+        }
+        /* only here */
+        
+        .date {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #919191;
+        }
+        
+        .flag {
+            width: auto;
+            height: 100%;
+        }
+        
+        .image {
+            height: 250px;
+            padding-bottom: 20px;
+        }
+        
+        .image p {
+            font-size: 0.75em;
+            color: #d0d0d0;
+            margin: 0;
+        }
+        
+        #break {
+            border-bottom: 1px solid #919191;
+            margin: 10px 0px;
         }
     </style>
 </head>
 <body>
-    <div class="main_title">ABOUT PERU'S FLAG</div>
+    <div class="main_title">PERU</div>
     
         
     <div class="link_container"><ul class="links">
@@ -95,6 +144,18 @@
     
     <div class="main">
         <h1 class="title">THE STORY OF THE FLAG</h1>
+        <div class="text">
+            <div class="date">July 28, 1984</div> 
+            <p>On the 160th century of the Peruvian independence, the new democratic government commisioned a new flag;</p>
+            <p>Originally, it was supposed to be a simple 2:3 rectangle flag, but at the time there was a shortage of materials, so the flag manufactors decided to cut down some parts.</p>
+            <p>The dovet and the war-version was introduced later in 1986.</p>
+            <div id="break"></div>
+            <div class="image">
+                <a href="his_1.png" title="Click to get image"><img class="flag" src="his_1.png" alt="If you see this then oof"></a>
+                <p>The original flag before the shape changes</p>
+            </div>
+            
+        </div>
     </div>
         
 </body>
